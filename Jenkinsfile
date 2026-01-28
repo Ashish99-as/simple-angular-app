@@ -4,10 +4,10 @@ pipeline {
     environment {
         // GITURL = "https://github.com/evisiondevops/simple-angular-app.git"
         // GITBRANCH = "main"
-        // GITCREDENTIALS_ID = "evisiondevops"
+        // GITCREDENTIALS_ID = "Ashish99-as"
         IMAGE_NAME = "simple-angular-app"
         CONTAINER_NAME = "simple-angular-app"
-        DOCKER_REGISTRY = "mgadhiyaai"
+        DOCKER_REGISTRY = "ashishpra123"
         HOST_PORT = "80"
         CONTAINER_PORT = "80"
         DOCKERFILENAME = "Dockerfile"
