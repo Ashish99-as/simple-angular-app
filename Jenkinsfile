@@ -2,7 +2,7 @@ pipeline {
     agent any
     
     environment {
-        // GITURL = "https://github.com/evisiondevops/simple-angular-app.git"
+        // GITURL = "https://github.com/Ashish99-as/simple-angular-app.git"
         // GITBRANCH = "main"
         // GITCREDENTIALS_ID = "Ashish99-as"
         IMAGE_NAME = "simple-angular-app"
@@ -29,7 +29,7 @@ pipeline {
                     def imageTag = "${DOCKER_REGISTRY}/${IMAGE_NAME}:${GIT_HASH}"
                     
                     sh """
-                        docker login --username mgadhiyaai -p dckr_pat_hBIMp8jDh3zdjza1qGSzflRN2F0
+                        docker login --username ashishpra123 -p dckr_pat_-hsNpJx_cfx8rscvfcxwCUr06cI
                         docker build -f ${DOCKERFILENAME} -t ${imageTag} .
                         docker push ${imageTag}
                     """
